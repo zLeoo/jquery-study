@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery</title>
+
+	<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+	<h1>Selecionando elementos</h1>
+
+	<div>Div 1</div>
+	<div>Div 2</div>
+
+	<ul id="1">
+		<li class="item-menu">Menu 1 - Item 1</li>
+		<li class="item-menu">Menu 1 - Item 2</li>
+		<li class="item-menu">Menu 1 - Item 3</li>
+	</ul>
+
+	<ul>
+		<li class="item-menu">Menu 2 - Item 1</li>
+		<li class="item-menu">Menu 2 - Item 2</li>
+		<li class="item-menu">Menu 2 - Item 3</li>
+	</ul>
+
+	<input type="text" placeholder="campo 1">
+
+	<select>
+		<option>-- selecione uma opção --</option>
+		<option>opção 1</option>
+		<option>opção 2</option>
+		<option>opção 3</option>
+	</select>
+
+	<br>
+
+	<img src="carro.jpg" id="image">
+	
+
+
+
+</body>
+	<script> 
+		
+		console.log($('#1 li.item-menu:first '))
+		console.log($('#1 li.item-menu:last '))
+		console.log($('#1 li.item-menu:even '))
+		console.log($('#1 li.item-menu:odd '))
+
+
+	</script>
+</html>

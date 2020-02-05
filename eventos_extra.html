@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>jQuery</title>
+
+		<style>
+					
+
+
+			.hover{
+				background-color: red;
+			}
+			
+
+		</style>
+
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+		<script>
+			$(document).ready(() => {
+				
+				$('#btn2').on('click', () => {
+					alert('Botão 2 clicado!')
+				})
+				
+				$('#btn1').on('click', () => {
+					$('#btn2').trigger('click')
+				})
+
+				$('div').hover(
+					() => $('div').addClass('hover'),
+					() => $('div').removeClass('hover')
+					)
+			})
+
+		</script>
+	</head>
+
+	<body>
+		<button id="btn1" type="button">BOTÃO 1</button>
+		<button id="btn2" type="button">BOTÃO 2</button>
+		<br/><br/>
+		<div style="width: 80px; height: 80px; border: 1px black solid"></div>
+	</body>
+
+</html>

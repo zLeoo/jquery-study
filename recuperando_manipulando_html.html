@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery</title>
+
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  <script>
+  	function text_pt(){
+  		console.log($('#letra_musica').html('<strong>Hoje</strong>'))
+  	}
+  	function text_eng(){
+  		console.log($('#letra_musica').text('<strong>Today</strong>'))
+  	}
+  	
+  </script>
+
+  
+
+</head>
+<body>
+
+	<div class="d-flex justify-content-center mb-5">
+		<button type="button" class="btn btn-success" onclick="text_pt()">Português</button>
+		<button type="button" class="btn btn-danger" onclick="text_eng()">Inglês</button>
+	</div>
+
+	<div class="text-center " id="letra_musica">
+		Today	
+	</div>
+	
+
+	
+		
+		
+		
+
+
+
+</body>
+
+
+	
+</html>

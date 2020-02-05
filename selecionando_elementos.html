@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery</title>
+
+	<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+	<h1>Selecionando elementos</h1>
+
+	<div>Div 1</div>
+	<div>Div 2</div>
+
+	<ul>
+		<li>Menu 1 - Item 1</li>
+		<li>Menu 1 - Item 2</li>
+		<li>Menu 1 - Item 3</li>
+	</ul>
+
+	<ul>
+		<li class="item-menu">Menu 2 - Item 1</li>
+		<li class="item-menu">Menu 2 - Item 2</li>
+		<li class="item-menu">Menu 2 - Item 3</li>
+	</ul>
+
+	<input type="text" placeholder="campo 1">
+
+	<select>
+		<option>-- selecione uma opção --</option>
+		<option>opção 1</option>
+		<option>opção 2</option>
+		<option>opção 3</option>
+	</select>
+
+	<br>
+
+	<img src="carro.jpg" id="image">
+	
+
+
+
+</body>
+	<script> 
+		//selecionar por elementos
+		console.log($('h1'))
+		console.log($('div'))
+		console.log($('ul'))
+		//selecionar por id
+		console.log($('#image'))
+		//selecionar por classe
+		console.log($('.item-menu'))
+
+
+	</script>
+</html>
